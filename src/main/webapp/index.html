@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html ng-app="routerApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Task Tracker Login Page</title>
+
+<script src="http://code.angularjs.org/1.4.1/angular.js"></script>
+<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+<script src="controllers/formSubmitController.js"></script>
+<script src="controllers/registerSubmitController.js"></script>
+<script src="controllers/taskSubmitController.js"></script>
+<script src="controllers/existingTasksController.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-cookies.min.js"></script>
+<script src="app.js"></script>
+<script src="services/loginService.js"></script>
+<script src="services/registerService.js"></script>
+<script src="services/taskService.js"></script>
+<script src="services/existingTasksService.js"></script>
+
+
+</head>
+<body>		
+
+	<ui-view></ui-view>	
+	
+	
+</body>
+</html>

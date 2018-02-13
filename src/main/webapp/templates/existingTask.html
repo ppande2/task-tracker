@@ -1,0 +1,40 @@
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  	 	
+</head>
+
+<body>
+
+<div data-ng-init="getTasks()"></div>
+
+<div class="tablePosition" style="height:269px;width:570px;overflow:auto;">
+<div id="row1">
+<div id="column1"><h4>{{deleteTasksStatus}}</h4></div>
+<div id="column2"><button class="btn btn-primary btn-medium pull-right" ng-click="remove()" >Delete</button></div>
+</div>
+    <table id="tasks">
+            <tr>
+               <!-- <th>Id</th>  --> 
+               <!-- <th>UserId</th>  --> 
+                <th>Task Name</th>
+                <th>Task Description</th>
+                <th>Task Priority</th>
+                <th>Task Date/Time</th>
+                <th>Tick to Delete</th>
+            </tr>
+            <tr ng-repeat="dt in currentTask">
+               <!--  <td>{{dt.id}}</td> --> 
+               <!-- <td>{{dt.userId}}</td>  --> 
+                <td>{{dt.taskName}}</td>
+                <td>{{dt.taskDescription}}</td>
+                <td>{{dt.taskPriority}}</td>
+                <td>{{dt.dateandtime | date: 'MM-dd-yyyy HH:mm'}}</td>
+                <td><input type="checkbox" ng-model="dt.isDelete"/></td>
+              <!--<td><input type="checkbox" ng-model="dt.isDelete"/>{{$index}}</td> -->
+              
+            </tr>
+        </table>
+</div>
+</body>

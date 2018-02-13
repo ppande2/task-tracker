@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	  	  
+</head>
+
+<body>
+ <div class="loginBox">
+ <h4>{{loginStatus}}</h4>
+	<h1>Login</h1>
+    <form ng-submit="submit()">
+		<!-- <h4>{{headerText}}</h4>  -->
+    	<input type="email" name="UserName" placeholder="UserId" required="required" ng-model="userId"/>
+        <input type="password" name="password" placeholder="Password" required="required" ng-model="password"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        <h4><a ng-href="#registerMe">RegisterMe</a></h4>
+       <!-- <h4>You submitted below data through post:</h4>  -->
+	   <!-- <pre>Form data ={{list}}</pre> -->
+    </form>
+</div>
+
+
+
+</body>
