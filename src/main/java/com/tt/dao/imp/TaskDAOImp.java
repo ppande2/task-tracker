@@ -58,7 +58,7 @@ public class TaskDAOImp implements TaskDAO  {
 	
 	public int deleteSelectedTasks(Collection<Object> idsToDelete){
 		
-
+//My Branch Change
 		//Integer[] idsToDeleteCovertedToIntegerArray = (Integer[])(idsToDelete.toArray(new Integer[idsToDelete.size()]));
 		Query query=entityManager.createQuery("delete from Task t where t.id IN :idsToDelete");
 		query.setParameter("idsToDelete",idsToDelete);
