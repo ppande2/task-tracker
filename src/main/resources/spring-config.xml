@@ -30,9 +30,9 @@
 	 -->
 		
 	 <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="username" value="cynosure_adm" />
-		<property name="password" value="cynosurepwd" />
-		<property name="url" value="jdbc:mysql://hofddejmysql1.intra.searshc.com:3372/cynosure_qa" />
+		<property name="username" value="" />
+		<property name="password" value="" />
+		<property name="url" value="" />
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 	</bean>
 	
